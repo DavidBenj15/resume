@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+% \usepackage{times}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+% \usepackage{mathptmx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape David Benjamin} \\ \vspace{1pt}
+    \small 610-955-1904 $|$ \href{mailto:davidnbenjamin15@gmail.com}{\underline{davidnbenjamin15@gmail.com}} $|$ 
+    \href{davidbenjamin.dev}{\underline{davidbenjamin.dev}} $|$
+    \href{https://www.linkedin.com/in/davidbenj15/}{\underline{linkedin.com/in/davidbenj15}} $|$
+    \href{https://github.com/DavidBenj15}{\underline{github.com/DavidBenj15}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Johns Hopkins University}{Baltimore, MD}
+      {B.S. in Computer Science $|$ Minor in Entrepreneurship \& Management $|$ GPA: 3.92}{Expected May 2027}
+  \resumeSubHeadingListEnd
+  % \resumeItemListStart
+  %   \resumeItem{Relevant Coursework: Artificial Intelligence, Computing in NumPy, Programming in C/C++ on Linux, Software System Design, Data Structures, Algorithms, Full Stack Development, Computing in Java, Professional Writing and Communication}
+  %   % \small{\item{Clubs \& Activities: Pava Accelerator, Software Engineering Club, Phi Gamma Delta Fraternity, Golf, Lacrosse, Lifting, Skiing}}
+
+
+  % \resumeItemListEnd
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \item{
+            \textbf{Relevant Coursework}: Artificial Intelligence, Data Structures, Algorithms, Software System Design, Full Stack Development, Programming in C/C++ on Linux, Computing in Java, Computing in NumPy, Professional Writing and Communication
+        }
+    }
+\end{itemize}
+
+  %-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+        \item{
+            \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C, C++, SQL, Bash \\
+            \textbf{Frameworks \& Libraries:} React, Node.js, HTML, CSS, Pandas, NumPy, Next.js \\
+            \textbf{Tools \& Platforms:} Linux/UNIX, AWS, Docker, Git, GitHub, Windows, Microsoft Office \\
+            \textbf{Methodologies:} Agile (Scrum), CI/CD (GitHub Actions), Testing (Unit, Integration, System, TDD), API Design
+        }
+    }
+\end{itemize}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart     
+      
+
+    \resumeSubheading
+      {National Aeronautics and Space Administration (NASA)}{May 2025 -- Present}
+      {Software Engineer Intern}{Greenbelt, MD}
+      \resumeItemListStart
+        \resumeItem{Built a constraint-based reviewer assignment tool with Google OR-Tools (CP-SAT) and Django, cutting space telescope proposal scheduling from 7 days to under 1 hour while meeting 15+ constraints on bias, workload, and compliance.}
+        \resumeItem{Eliminated timeout failures by implementing asynchronous processing with Celery and Redis, enabling uninterrupted long-running constraint solver jobs and improving system reliability for users.}
+        \resumeItem{Developed a name disambiguation module leveraging RapidFuzz and nickname heuristics, significantly improving conflict detection accuracy to reduce bias during proposal-reviewer assignment.}
+
+      \resumeItemListEnd
+
+\resumeSubheading
+    {Meta × Major League Hacking (MLH)}{June 2025 -- Present}
+    {Site Reliability Engineering Fellow}{Remote}
+    \resumeItemListStart
+        \resumeItem{Selected for a competitive 12-week fellowship (acceptance rate $<$2.5\%) under direct mentorship of Meta Production Engineers, applying real-world Software Engineering and Site Reliability Engineering (SRE) practices.}
+        \resumeItem{Built and deployed a production-grade portfolio website using Linux (DigitalOcean VPS), Nginx (reverse proxy, rate limiting), Docker, and MySQL; implemented CI/CD pipelines with GitHub Actions and ensured reliability through TDD.}
+        \resumeItem{Integrated Prometheus and Grafana for observability, enabling real-time monitoring, metrics, and alerts to accelerate incident detection and resolution.}
+
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {JHU Sports Analytics Research Group}{May 2024 -- May 2025}
+      {Lead Software Engineer}{Baltimore, MD}
+      \resumeItemListStart
+        \resumeItem{Led a team of 9 to build the Atlantic League of Professional Baseballs’s first league-wide analytics platform, introducing MLB-style advanced analytics access and tool sharing to modernize team operations.}
+        \resumeItem{Democratized access to 60,000+ Trackman data points/game by deploying an ETL pipeline (Pandas, AWS Lambda, Docker) and REST API (PostgreSQL, AWS API Gateway); currently used by 10+ developers to build 5+ statistical apps.}
+        \resumeItem{Built and deployed a full-stack web app with Next.js, TypeScript, Express.js, and Tailwind CSS to unify the discovery and use of analytics baseball tools; currently serving 100+ users.}
+      \resumeItemListEnd
+    
+      
+    \resumeSubheading
+      {HopHacks}{December 2024 -- Present}
+      {Full Stack Software Engineer, Organizer}{Baltimore, MD}
+      \resumeItemListStart
+        \resumeItem{Automated deployment for HopHacks website by designing a GitHub Actions CI/CD pipeline, reducing manual EC2 deployment steps by 100\% and eliminating downtime via safe, zero-downtime rsync + build promotion strategy.}
+        \resumeItem{Built core full stack features to support 500+ hackers and judges using React, Flask, MongoDB, and Amazon S3. }
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+% -----------PROJECTS-----------
+    \section{Projects \& Hackathons}
+      \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Alibaba Global E-Commerce Challenge (2\textsuperscript{nd} / 500+ Global Teams)}}{}
+          \resumeItemListStart
+            \resumeItem{Built an AR “View in Your Space” web app using React, Tailwind, and Google's $<$model-viewer$>$ to boost Alibaba sales in developing markets.}
+
+            \resumeItem{Selected as a finalist to pitch live to 70+ Alibaba engineers and executives; earned 2\textsuperscript{nd} place globally out of 500+ teams.}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{ColdMap}}{}
+          \resumeItemListStart
+            % \resumeItem{Built an interactive map-based dashboard in Palantir AIP to visualize upcoming cell therapy shipment risks, showing routes, excursion likelihood, and top contributing factors.}
+            %  \resumeItem{Built an ETL and logistic regression pipeline using Polars and scikit-learn for shipment risk prediction. Integrated GPT-4o into the dashboard to surface insights, flag high-risk routes, and auto-draft alert emails in natural language.}
+            \resumeItem{Built a Palantir AIP dashboard to visualize cell therapy shipment risks and contributing factors. Developed an ETL + logistic regression pipeline (Polars, scikit-learn) for risk prediction and explainability, integrating GPT-4o to surface insights, flag high-risk routes, and auto-draft alert emails.}
+
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Brody Bot}}{}
+          \resumeItemListStart
+            \resumeItem{Automated study room reservations for 20+ students at Johns Hopkins with a configurable Python + Selenium script.}
+            \resumeItem{Bypassed user booking limits using multiprocessing; coordinated concurrent bots and handled race conditions using SQLite.}
+          \resumeItemListEnd
+
+      \resumeSubHeadingListEnd
+
+    \section{Activities}
+         \begin{itemize}[leftmargin=0.15in, label={}]
+            \small{\item{
+             % \textbf{Soft Skills}{: Public speaking, Communication, Active listening, Attention to detail} \\
+             {Pava Accelerator, Software Engineering Club, Phi Gamma Delta Fraternity, Golf, Lacrosse, Lifting, Skiing} \\
+            }}
+         \end{itemize}
+
+\end{document}
