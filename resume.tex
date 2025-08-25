@@ -131,7 +131,7 @@
     \begin{itemize}[leftmargin=0.15in, label={}]
     \small{
         \item{
-            \textbf{Relevant Coursework}: Artificial Intelligence, Data Structures, Algorithms, Software System Design, Full Stack Development, Programming in C/C++ on Linux, Computing in Java, Computing in NumPy, Professional Writing and Communication
+            \textbf{Relevant Coursework}: Artificial Intelligence, Data Structures, Algorithms, Software System Design, Full Stack Development, Programming in C/C++ on Linux, Deep Learning for Medical Imaging, Professional Writing and Communication
         }
     }
 \end{itemize}
@@ -143,32 +143,32 @@
       
 
     \resumeSubheading
-      {National Aeronautics and Space Administration (NASA)}{May 2025 -- Present}
+      {NASA – National Aeronautics and Space Administration}{May 2025 -- Present}
       {Software Engineer Intern}{Greenbelt, MD}
       \resumeItemListStart
-        \resumeItem{Built a constraint-based reviewer assignment tool with Google OR-Tools (CP-SAT) and Django, cutting space telescope proposal scheduling from 7 days to under 1 hour while meeting 15+ constraints on bias, workload, and compliance.}
-        \resumeItem{Eliminated timeout failures by implementing asynchronous processing with Celery and Redis, enabling uninterrupted long-running constraint solver jobs and improving system reliability for users.}
-        \resumeItem{Engineered conflict-detection modules, including a name disambiguation system (RapidFuzz + heuristics) and a target coordinate resolver (Astropy), improving reviewer assignment accuracy and reducing bias.}
+        \resumeItem{Reduced scheduling time for hundreds of telescope proposals from 7 days to under 1 hour by engineering a constraint-based reviewer assignment system (Google OR-Tools, Django) that enforced 20+ compliance, fairness, and workload constraints.}
+        \resumeItem{Eliminated 100\% of observed timeout failures in telescope review scheduling by implementing Celery + Redis for async orchestration, enabling continuous processing of multi-hour optimization jobs critical to proposal review.}
+        \resumeItem{Improved fairness and accuracy in reviewer assignments through conflict-detection modules, including fuzzy name disambiguation (RapidFuzz) and coordinate resolution (Astropy), reducing bias and strengthening scientific integrity.}
 
       \resumeItemListEnd
 
 \resumeSubheading
-    {Meta × Major League Hacking (MLH)}{June 2025 -- Present}
+    {Meta – Major League Hacking Fellowship}{June 2025 -- September 2025}
     {Site Reliability Engineering Fellow}{Remote}
     \resumeItemListStart
-    \resumeItem{Selected for competitive 12-week fellowship (acceptance rate less than 2.5\%) under the direct mentorship of Meta Production Engineers, applying Software and Site Reliability Engineering practices.}
-    \resumeItem{Deployed production-grade portfolio website on Linux (DigitalOcean VPS) with Nginx reverse proxy, Docker containerization, MySQL database, and CI/CD pipelines via GitHub Actions.}
-    \resumeItem{Implemented Prometheus/Grafana monitoring stack for real-time metrics, alerting, and incident response; gained proficiency in Linux system administration, TDD practices, microservices, and networking fundamentals (TCP/IP, DNS, HTTP, etc.)}
+    \resumeItem{One of less than 2.5\% accepted into Meta and MLH's 12-week Site Reliability Engineering fellowship, collaborating with Meta Production Engineers to design reliable, scalable, production-ready systems.}
+    \resumeItem{Deployed production-grade portfolio website on Linux (DigitalOcean VPS) using Nginx reverse proxy, Docker containerization, and MySQL database; gained proficiency with Linux system administration and core networking concepts (HTTP, DNS, TCP/IP).}
+    \resumeItem{Built CI/CD pipelines with GitHub Actions and implemented Prometheus/Grafana monitoring for real-time metrics, alerting, and incident response, enhancing performance troubleshooting, observability, and incident management skills.}
 
     \resumeItemListEnd
 
     \resumeSubheading
-      {JHU Sports Analytics Research Group}{May 2024 -- May 2025}
+      {Johns Hopkins Sports Analytics Research Group}{May 2024 -- May 2025}
       {Lead Software Engineer}{Baltimore, MD}
       \resumeItemListStart
-        \resumeItem{Led a team of 9 to build the Atlantic League of Professional Baseball’s first league-wide analytics platform, introducing MLB-style advanced analytics access and tool sharing to modernize team operations.}
-        \resumeItem{Democratized access to 60,000+ Trackman data points/game by deploying an ETL pipeline (Pandas, AWS Lambda, Docker) and REST API (PostgreSQL, AWS API Gateway); currently used by 10+ developers to build 5+ statistical apps.}
-        \resumeItem{Built and deployed a full-stack web app with Next.js, TypeScript, Express.js, and Tailwind CSS to unify the discovery and use of analytics baseball tools; currently serving 100+ users.}
+        \resumeItem{Directed a 9-person team to deliver the Atlantic League of Professional Baseball’s first league-wide analytics platform, providing MLB-caliber data access and tool sharing that modernized team operations.}
+        \resumeItem{Engineered and deployed an ETL pipeline (Pandas, AWS Lambda, Docker) and REST API (PostgreSQL, API Gateway) that democratizes 60K+ Trackman datapoints per game; now powering 10+ developers building 5+ statistical apps.}
+        \resumeItem{Launched a full-stack web app (Next.js, TypeScript, Express.js, Tailwind CSS) centralizing analytics tools; adopted by 100+ coaches, analysts, and staff for data-driven decision-making.}
       \resumeItemListEnd
     
       
@@ -176,8 +176,8 @@
       {HopHacks}{December 2024 -- Present}
       {Full Stack Software Engineer, Organizer}{Baltimore, MD}
       \resumeItemListStart
-        \resumeItem{Automated deployment for HopHacks website by designing a GitHub Actions CI/CD pipeline, reducing manual EC2 deployment steps by 100\% and eliminating downtime via safe, zero-downtime rsync + build promotion strategy.}
-        \resumeItem{Built core full stack features to support 500+ hackers and judges using React, Flask, MongoDB, and Amazon S3. }
+        \resumeItem{Engineered a GitHub Actions–based CI/CD pipeline that fully automated website deployment, eliminating 100\% of manual EC2 deployment steps and achieving zero-downtime releases through rsync + build promotion.}
+        \resumeItem{Developed core full-stack features (React, Flask, MongoDB, S3) supporting 500+ hackers and judges, collaborating across 5 functional teams with Agile workflows to enhance registration, judging, and overall event experience.}
 
       \resumeItemListEnd
 
@@ -188,51 +188,42 @@
 % -----------PROJECTS-----------
     \section{Projects \& Hackathons}
       \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+      {\textbf{ColdMap}}{}
+      \resumeItemListStart
+        \resumeItem{Built an AI-driven Palantir AIP dashboard integrating GPT-4o, Polars, and scikit-learn to analyze cryogenic shipment data, predict risks, and generate explainable insights for cell therapy cold chain logistics.}
+
+      \resumeItemListEnd
+
         \resumeProjectHeading
           {\textbf{Alibaba Global E-Commerce Challenge (2\textsuperscript{nd} / 500+ Global Teams)}}{}
           \resumeItemListStart
-            \resumeItem{Built an AR “View in Your Space” web app using React, Tailwind, and Google's $<$model-viewer$>$ to boost Alibaba sales in developing markets.}
-
-            \resumeItem{Selected as a finalist to pitch live to 70+ Alibaba engineers and executives; earned 2\textsuperscript{nd} place globally out of 500+ teams.}
+            \resumeItem{Built LEAP, an AR “view in your room” shopping app (React, Tailwind CSS, Google model-viewer), designed to integrate with Lazada and boost sales in developing markets by increasing purchase confidence.}
+            \resumeItem{Earned 2nd place globally out of 500+ teams; pitched live at Alibaba HQ to 70+ engineers and executives, including C-suite leaders.}
           \resumeItemListEnd
-          
-        \resumeProjectHeading
-          {\textbf{ColdMap}}{}
-          \resumeItemListStart
-            % \resumeItem{Built an interactive map-based dashboard in Palantir AIP to visualize upcoming cell therapy shipment risks, showing routes, excursion likelihood, and top contributing factors.}
-            %  \resumeItem{Built an ETL and logistic regression pipeline using Polars and scikit-learn for shipment risk prediction. Integrated GPT-4o into the dashboard to surface insights, flag high-risk routes, and auto-draft alert emails in natural language.}
-            \resumeItem{Built a Palantir AIP dashboard to visualize cell therapy shipment risks and contributing factors. Developed an ETL + logistic regression pipeline (Polars, scikit-learn) for risk prediction and explainability, integrating GPT-4o to surface insights, flag high-risk routes, and auto-draft alert emails.}
-
-          \resumeItemListEnd
+        
 
         \resumeProjectHeading
           {\textbf{Brody Bot}}{}
           \resumeItemListStart
-            \resumeItem{Automated study room reservations for 20+ students at Johns Hopkins with a configurable Python + Selenium script.}
-            \resumeItem{Bypassed user booking limits using multiprocessing; coordinated concurrent bots and handled race conditions using SQLite.}
+            \resumeItem{Automated 200+ hours of study room reservations for 20+ students at Johns Hopkins by developing a configurable Python + Selenium bot, bypassing booking limits with multiprocessing and coordinating concurrent bots with SQLite.}
           \resumeItemListEnd
 
       \resumeSubHeadingListEnd
 
         %-----------SKILLS-----------
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{
-        \item{
-            \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C, C++, SQL, Bash \\
-            \textbf{Frameworks \& Libraries:} React, Node.js, HTML, CSS, Pandas, NumPy, Next.js \\
-            \textbf{Tools \& Platforms:} Linux/UNIX, AWS, Docker, Git, GitHub, Windows, Microsoft Office \\
-            \textbf{Methodologies:} Agile (Scrum), CI/CD (GitHub Actions), Testing (Unit, Integration, System, TDD), API Design
-        }
-    }
-\end{itemize}
-
-    \section{Activities}
-         \begin{itemize}[leftmargin=0.15in, label={}]
-            \small{\item{
-             % \textbf{Soft Skills}{: Public speaking, Communication, Active listening, Attention to detail} \\
-             {Pava Accelerator, Software Engineering Club, Phi Gamma Delta Fraternity, Golf, Lacrosse, Lifting, Skiing} \\
-            }}
-         \end{itemize}
+        \section{Skills \& Interests}
+        \begin{itemize}[leftmargin=0.15in, label={}]
+            \small{
+                \item{
+                    \textbf{Programming Languages:} Python, JavaScript, TypeScript, Java, C, C++, SQL, Bash \\
+                    \textbf{Frameworks \& Tools:} Docker, Git, GitHub, React, Next.js, Node.js, HTML, CSS, Pandas, NumPy \\
+                    \textbf{Cloud, DevOps \& Testing:} AWS, Linux/UNIX, CI/CD (GitHub Actions), Agile (Scrum), Testing (Unit, Integration, System, TDD), API Design \\
+                    \textbf{Interests \& Activities:} Pava Accelerator, Software Engineering Club, Phi Gamma Delta Fraternity, Golf, Lacrosse, Skiing
+                }
+            }
+        \end{itemize}
+        
 
 \end{document}
